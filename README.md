@@ -6,7 +6,6 @@
 
 There are two ways to create an exporter.
 
-![Exporter](./art/exporter.png)
 
 #### Create an exporter using the command
 
@@ -110,8 +109,6 @@ Now you can navigate to `http://your-domain/tools/data-synchronize/export/posts`
 
 #### Add exporter to Export/Import Data panel section
 
-![Panel Section](./art/panel-section-1.png)
-
 To add the exporter to the Export/Import Data panel section, you can use the `beforeRendering` method of
 the `PanelSectionManager` class to register the exporter into the panel section.
 
@@ -143,13 +140,10 @@ public function boot(): void
 
 You can see the exporter in the **Export/Import Data** panel section.
 
-![Panel Section](./art/panel-section-2.png)
 
 ### Importer
 
 There are two ways to create an importer.
-
-![Importer](./art/importer.png)
 
 #### Create an importer using the command
 
@@ -320,11 +314,4 @@ public function boot(): void
 }
 ```
 
-You can see the importer in the **Export/Import Data** panel section.
-
-### Import/Export data from command line
-
-<img width="1136" alt="Screenshot 2024-07-23 at 20 31 23" src="https://github.com/user-attachments/assets/5c85f3a6-3e07-427c-92be-9732d468719f">
-
-<img width="1136" alt="Screenshot 2024-07-24 at 04 30 45" src="https://github.com/user-attachments/assets/a5ee3f49-d47b-4faf-a76d-16fa3b2dd457">
 
