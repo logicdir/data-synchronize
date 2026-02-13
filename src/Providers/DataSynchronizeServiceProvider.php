@@ -1,21 +1,21 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Providers;
+namespace logicdir\DataSynchronize\Providers;
 
-use Logicdir\Base\Facades\DashboardMenu;
-use Logicdir\Base\Facades\PanelSectionManager as PanelSectionManagerFacade;
-use Logicdir\Base\Supports\ServiceProvider;
-use Logicdir\Base\Traits\LoadAndPublishDataTrait;
-use Logicdir\DataSynchronize\Commands\ClearChunksCommand;
-use Logicdir\DataSynchronize\Commands\ExportCommand;
-use Logicdir\DataSynchronize\Commands\ExportControllerMakeCommand;
-use Logicdir\DataSynchronize\Commands\ExporterMakeCommand;
-use Logicdir\DataSynchronize\Commands\ImportCommand;
-use Logicdir\DataSynchronize\Commands\ImportControllerMakeCommand;
-use Logicdir\DataSynchronize\Commands\ImporterMakeCommand;
-use Logicdir\DataSynchronize\Commands\TestLargeExportCommand;
-use Logicdir\DataSynchronize\PanelSections\ExportPanelSection;
-use Logicdir\DataSynchronize\PanelSections\ImportPanelSection;
+use logicdir\Base\Facades\DashboardMenu;
+use logicdir\Base\Facades\PanelSectionManager as PanelSectionManagerFacade;
+use logicdir\Base\Supports\ServiceProvider;
+use logicdir\Base\Traits\LoadAndPublishDataTrait;
+use logicdir\DataSynchronize\Commands\ClearChunksCommand;
+use logicdir\DataSynchronize\Commands\ExportCommand;
+use logicdir\DataSynchronize\Commands\ExportControllerMakeCommand;
+use logicdir\DataSynchronize\Commands\ExporterMakeCommand;
+use logicdir\DataSynchronize\Commands\ImportCommand;
+use logicdir\DataSynchronize\Commands\ImportControllerMakeCommand;
+use logicdir\DataSynchronize\Commands\ImporterMakeCommand;
+use logicdir\DataSynchronize\Commands\TestLargeExportCommand;
+use logicdir\DataSynchronize\PanelSections\ExportPanelSection;
+use logicdir\DataSynchronize\PanelSections\ImportPanelSection;
 use Illuminate\Console\Scheduling\Schedule;
 
 class DataSynchronizeServiceProvider extends ServiceProvider

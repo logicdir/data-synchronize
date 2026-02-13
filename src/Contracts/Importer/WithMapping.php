@@ -1,6 +1,6 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Contracts\Importer;
+namespace logicdir\DataSynchronize\Contracts\Importer;
 
 interface WithMapping
 {

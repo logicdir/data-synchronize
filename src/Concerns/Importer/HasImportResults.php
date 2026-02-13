@@ -1,6 +1,6 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Concerns\Importer;
+namespace logicdir\DataSynchronize\Concerns\Importer;
 
 use Illuminate\Support\Collection;
 

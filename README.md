@@ -23,11 +23,11 @@ This is how an exporter should look like, below is an example of a `PostExporter
 ```php
 <?php
 
-namespace Logicdir\Blog\Exporters;
+namespace logicdir\Blog\Exporters;
 
-use Logicdir\Blog\Models\Post;
-use Logicdir\DataSynchronize\Exporter\ExportColumn;
-use Logicdir\DataSynchronize\Exporter\Exporter;
+use logicdir\Blog\Models\Post;
+use logicdir\DataSynchronize\Exporter\ExportColumn;
+use logicdir\DataSynchronize\Exporter\Exporter;
 use Illuminate\Support\Collection;
 
 class PostExporter extends Exporter
@@ -58,11 +58,11 @@ This is how to use the exporter in a controller.
 ```php
 <?php
 
-namespace Logicdir\Blog\Http\Controllers;
+namespace logicdir\Blog\Http\Controllers;
 
-use Logicdir\DataSynchronize\Exporter\Exporter;
-use Logicdir\DataSynchronize\Http\Controllers\ExportController;
-use Logicdir\Blog\Exporters\PostExporter;
+use logicdir\DataSynchronize\Exporter\Exporter;
+use logicdir\DataSynchronize\Http\Controllers\ExportController;
+use logicdir\Blog\Exporters\PostExporter;
 
 class ExportPostController extends ExportController
 {
@@ -76,9 +76,9 @@ class ExportPostController extends ExportController
 And then register the route in your routes file.
 
 ```php
-use Logicdir\Base\Facades\AdminHelper;
+use logicdir\Base\Facades\AdminHelper;
 use Illuminate\Support\Facades\Route;
-use Logicdir\Blog\Http\Controllers\ExportPostController;
+use logicdir\Blog\Http\Controllers\ExportPostController;
 
 AdminHelper::registerRoutes(function () {
     Route::prefix('tools/data-synchronize')->name('tools.data-synchronize.')->group(function () {
@@ -116,9 +116,9 @@ To add the exporter to the Export/Import Data panel section, you can use the `be
 the `PanelSectionManager` class to register the exporter into the panel section.
 
 ```php
-use Logicdir\Base\Facades\PanelSectionManager;
-use Logicdir\Base\PanelSections\PanelSectionItem;
-use Logicdir\DataSynchronize\PanelSections\ExportPanelSection;
+use logicdir\Base\Facades\PanelSectionManager;
+use logicdir\Base\PanelSections\PanelSectionItem;
+use logicdir\DataSynchronize\PanelSections\ExportPanelSection;
 
 public function boot(): void
 {
@@ -166,11 +166,11 @@ This is how an importer should look like, below is an example of a `PostImporter
 ```php
 <?php
 
-namespace Logicdir\Blog\Importers;
+namespace logicdir\Blog\Importers;
 
-use Logicdir\Blog\Models\Post;
-use Logicdir\DataSynchronize\Importer\ImportColumn;
-use Logicdir\DataSynchronize\Importer\Importer;
+use logicdir\Blog\Models\Post;
+use logicdir\DataSynchronize\Importer\ImportColumn;
+use logicdir\DataSynchronize\Importer\Importer;
 
 class PostImporter extends Importer
 {
@@ -243,10 +243,10 @@ This is how to use the importer in a controller.
 ```php
 <?php
 
-namespace Logicdir\Blog\Http\Controllers;
+namespace logicdir\Blog\Http\Controllers;
 
-use Logicdir\DataSynchronize\Http\Controllers\ImportController;
-use Logicdir\DataSynchronize\Importer\Importer;
+use logicdir\DataSynchronize\Http\Controllers\ImportController;
+use logicdir\DataSynchronize\Importer\Importer;
 
 class ImportPostController extends ImportController
 {
@@ -260,7 +260,7 @@ class ImportPostController extends ImportController
 And then register the route in your routes file.
 
 ```php
-use Logicdir\Base\Facades\AdminHelper;
+use logicdir\Base\Facades\AdminHelper;
 
 AdminHelper::registerRoutes(function () {
     Route::prefix('tools/data-synchronize')->name('tools.data-synchronize.')->group(function () {
@@ -295,9 +295,9 @@ Now you can navigate to `http://your-domain/tools/data-synchronize/import/posts`
 To add the importer to the Export/Import Data panel section, you can use the `beforeRendering` method of the `PanelSectionManager` class to register the importer into the panel section.
 
 ```php
-use Logicdir\Base\Facades\PanelSectionManager;
-use Logicdir\Base\PanelSections\PanelSectionItem;
-use Logicdir\DataSynchronize\PanelSections\ImportPanelSection;
+use logicdir\Base\Facades\PanelSectionManager;
+use logicdir\Base\PanelSections\PanelSectionItem;
+use logicdir\DataSynchronize\PanelSections\ImportPanelSection;
 
 public function boot(): void
 {

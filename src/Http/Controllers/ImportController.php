@@ -1,13 +1,13 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Http\Controllers;
+namespace logicdir\DataSynchronize\Http\Controllers;
 
-use Logicdir\Base\Facades\BaseHelper;
-use Logicdir\Base\Http\Controllers\BaseController;
-use Logicdir\Base\Supports\Breadcrumb;
-use Logicdir\DataSynchronize\Http\Requests\DownloadTemplateRequest;
-use Logicdir\DataSynchronize\Http\Requests\ImportRequest;
-use Logicdir\DataSynchronize\Importer\Importer;
+use logicdir\Base\Facades\BaseHelper;
+use logicdir\Base\Http\Controllers\BaseController;
+use logicdir\Base\Supports\Breadcrumb;
+use logicdir\DataSynchronize\Http\Requests\DownloadTemplateRequest;
+use logicdir\DataSynchronize\Http\Requests\ImportRequest;
+use logicdir\DataSynchronize\Importer\Importer;
 use Exception;
 use Illuminate\Http\Request;
 

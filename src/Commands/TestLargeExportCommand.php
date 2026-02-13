@@ -1,8 +1,8 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Commands;
+namespace logicdir\DataSynchronize\Commands;
 
-use Logicdir\Ecommerce\Exporters\ProductExporter;
+use logicdir\Ecommerce\Exporters\ProductExporter;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Attribute\AsCommand;
 

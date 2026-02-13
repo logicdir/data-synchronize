@@ -1,6 +1,6 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Commands;
+namespace logicdir\DataSynchronize\Commands;
 
 use Illuminate\Console\GeneratorCommand as BaseGeneratorCommand;
 use Illuminate\Support\Arr;

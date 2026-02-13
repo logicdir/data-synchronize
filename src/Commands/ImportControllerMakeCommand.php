@@ -1,6 +1,6 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Commands;
+namespace logicdir\DataSynchronize\Commands;
 
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Input\InputArgument;

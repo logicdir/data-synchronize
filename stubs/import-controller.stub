@@ -2,8 +2,8 @@
 
 namespace {{ namespace }};
 
-use Logicdir\DataSynchronize\Http\Controllers\ImportController;
-use Logicdir\DataSynchronize\Importer\Importer;
+use logicdir\DataSynchronize\Http\Controllers\ImportController;
+use logicdir\DataSynchronize\Importer\Importer;
 use {{ importerNamespace }};
 
 class {{ class }} extends ImportController

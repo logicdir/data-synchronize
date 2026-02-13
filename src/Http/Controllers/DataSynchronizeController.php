@@ -1,9 +1,9 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Http\Controllers;
+namespace logicdir\DataSynchronize\Http\Controllers;
 
-use Logicdir\Base\Http\Controllers\BaseController;
-use Logicdir\Base\Supports\Breadcrumb;
+use logicdir\Base\Http\Controllers\BaseController;
+use logicdir\Base\Supports\Breadcrumb;
 
 class DataSynchronizeController extends BaseController
 {

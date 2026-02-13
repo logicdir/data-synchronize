@@ -2,8 +2,8 @@
 
 namespace {{ namespace }};
 
-use Logicdir\DataSynchronize\Importer\ImportColumn;
-use Logicdir\DataSynchronize\Importer\Importer;
+use logicdir\DataSynchronize\Importer\ImportColumn;
+use logicdir\DataSynchronize\Importer\Importer;
 
 class {{ class }} extends Importer
 {

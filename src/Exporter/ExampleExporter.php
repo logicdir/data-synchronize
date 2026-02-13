@@ -1,8 +1,8 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Exporter;
+namespace logicdir\DataSynchronize\Exporter;
 
-use Logicdir\DataSynchronize\Importer\ImportColumn;
+use logicdir\DataSynchronize\Importer\ImportColumn;
 use Illuminate\Support\Collection;
 
 class ExampleExporter extends Exporter

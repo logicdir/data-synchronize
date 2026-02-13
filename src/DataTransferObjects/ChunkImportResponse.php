@@ -1,6 +1,6 @@
 <?php
 
-namespace Logicdir\DataSynchronize\DataTransferObjects;
+namespace logicdir\DataSynchronize\DataTransferObjects;
 
 class ChunkImportResponse extends ChunkResponse
 {

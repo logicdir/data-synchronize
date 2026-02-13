@@ -1,12 +1,12 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Http\Controllers;
+namespace logicdir\DataSynchronize\Http\Controllers;
 
-use Logicdir\Base\Http\Controllers\BaseController;
-use Logicdir\Base\Http\Responses\BaseHttpResponse;
-use Logicdir\Media\Chunks\Exceptions\UploadMissingFileException;
-use Logicdir\Media\Chunks\Handler\DropZoneUploadHandler;
-use Logicdir\Media\Chunks\Receiver\FileReceiver;
+use logicdir\Base\Http\Controllers\BaseController;
+use logicdir\Base\Http\Responses\BaseHttpResponse;
+use logicdir\Media\Chunks\Exceptions\UploadMissingFileException;
+use logicdir\Media\Chunks\Handler\DropZoneUploadHandler;
+use logicdir\Media\Chunks\Receiver\FileReceiver;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;

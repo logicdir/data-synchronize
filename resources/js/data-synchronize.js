@@ -14,7 +14,7 @@ $(() => {
                     const responseData = isJsonBlob(data) ? await (data)?.text() : data || {};
                     const responseJson = (typeof responseData === "string") ? JSON.parse(responseData) : responseData;
 
-                    Logicdir.showError(responseJson?.message || $form.data('error-message'))
+                    logicdir.showError(responseJson?.message || $form.data('error-message'))
 
                     return
                 }
@@ -26,10 +26,10 @@ $(() => {
                 a.click()
                 window.URL.revokeObjectURL(url)
 
-                Logicdir.showSuccess($form.data('success-message'))
+                logicdir.showSuccess($form.data('success-message'))
             })
             .catch((error) => {
-                Logicdir.showError(error.message ? (error.statusText + ': ' + error.message) : form.data('error-message'))
+                logicdir.showError(error.message ? (error.statusText + ': ' + error.message) : form.data('error-message'))
             })
     }
 
@@ -78,7 +78,7 @@ $(() => {
         })
 
         const cleanup = () => {
-            Logicdir.hideButtonLoading($button)
+            logicdir.hideButtonLoading($button)
             $button.prop('disabled', true).addClass('disabled')
             dropzone.removeAllFiles()
         }
@@ -167,7 +167,7 @@ $(() => {
             failures = []
 
             output($form.data('uploading-message'))
-            Logicdir.showButtonLoading($button)
+            logicdir.showButtonLoading($button)
         })
 
         dropzone.on('success', (file, { data, error, message }) => {

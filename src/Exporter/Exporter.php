@@ -1,11 +1,11 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Exporter;
+namespace logicdir\DataSynchronize\Exporter;
 
-use Logicdir\Base\Facades\Assets;
-use Logicdir\Base\Facades\BaseHelper;
-use Logicdir\DataSynchronize\Concerns\Exporter\HasEmptyState;
-use Logicdir\DataSynchronize\Enums\ExportColumnType;
+use logicdir\Base\Facades\Assets;
+use logicdir\Base\Facades\BaseHelper;
+use logicdir\DataSynchronize\Concerns\Exporter\HasEmptyState;
+use logicdir\DataSynchronize\Enums\ExportColumnType;
 use Carbon\Carbon;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Arr;
@@ -40,7 +40,7 @@ abstract class Exporter implements FromCollection, ShouldAutoSize, WithColumnFor
     protected int $memoryCheckInterval = 1000;
 
     /**
-     * @return \Logicdir\DataSynchronize\Exporter\ExportColumn[]
+     * @return \logicdir\DataSynchronize\Exporter\ExportColumn[]
      */
     abstract public function columns(): array;
 
@@ -73,7 +73,7 @@ abstract class Exporter implements FromCollection, ShouldAutoSize, WithColumnFor
     }
 
     /**
-     * @return \Logicdir\DataSynchronize\Exporter\ExportCounter[]
+     * @return \logicdir\DataSynchronize\Exporter\ExportCounter[]
      */
     public function getCounters(): array
     {
@@ -171,7 +171,7 @@ abstract class Exporter implements FromCollection, ShouldAutoSize, WithColumnFor
     }
 
     /**
-     * @return \Logicdir\DataSynchronize\Exporter\ExportColumn[]
+     * @return \logicdir\DataSynchronize\Exporter\ExportColumn[]
      */
     public function getColumns(): array
     {
@@ -235,7 +235,7 @@ abstract class Exporter implements FromCollection, ShouldAutoSize, WithColumnFor
     }
 
     /**
-     * @return \Logicdir\DataSynchronize\Exporter\ExportColumn[]
+     * @return \logicdir\DataSynchronize\Exporter\ExportColumn[]
      */
     public function getAcceptedColumns(): array
     {

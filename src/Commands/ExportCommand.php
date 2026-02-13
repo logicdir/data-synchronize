@@ -1,8 +1,8 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Commands;
+namespace logicdir\DataSynchronize\Commands;
 
-use Logicdir\DataSynchronize\Exporter\Exporter;
+use logicdir\DataSynchronize\Exporter\Exporter;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Console\PromptsForMissingInput;
@@ -113,7 +113,7 @@ class ExportCommand extends Command implements PromptsForMissingInput
     protected function promptForMissingArgumentsUsing(): array
     {
         return [
-            'exporter' => ['What is the exporter class name?', 'E.g. Logicdir\Blog\Exporters\PostExporter'],
+            'exporter' => ['What is the exporter class name?', 'E.g. logicdir\Blog\Exporters\PostExporter'],
             'path' => ['Where do you want to save the file?', 'E.g. storage/app/exports'],
         ];
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Importer;
+namespace logicdir\DataSynchronize\Importer;
 
 class ImportColumn
 {

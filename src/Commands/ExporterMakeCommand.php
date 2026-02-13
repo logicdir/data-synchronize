@@ -1,6 +1,6 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Commands;
+namespace logicdir\DataSynchronize\Commands;
 
 use Illuminate\Support\Stringable;
 
@@ -137,9 +137,9 @@ class ExporterMakeCommand extends GeneratorCommand
     protected function createPanelSection(): void
     {
         $stub = <<<'PHP'
-        use Logicdir\Base\Facades\PanelSectionManager;
-        use Logicdir\Base\PanelSections\PanelSectionItem;
-        use Logicdir\DataSynchronize\PanelSections\ExportPanelSection;
+        use logicdir\Base\Facades\PanelSectionManager;
+        use logicdir\Base\PanelSections\PanelSectionItem;
+        use logicdir\DataSynchronize\PanelSections\ExportPanelSection;
 
         PanelSectionManager::setGroupId('data-synchronize')->beforeRendering(function () {
             PanelSectionManager::default()->registerItem(

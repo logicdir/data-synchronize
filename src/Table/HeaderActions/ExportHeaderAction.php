@@ -1,8 +1,8 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Table\HeaderActions;
+namespace logicdir\DataSynchronize\Table\HeaderActions;
 
-use Logicdir\Table\HeaderActions\HeaderAction;
+use logicdir\Table\HeaderActions\HeaderAction;
 
 class ExportHeaderAction extends HeaderAction
 {

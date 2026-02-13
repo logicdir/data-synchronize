@@ -1,8 +1,8 @@
 <?php
 
-namespace Logicdir\DataSynchronize\PanelSections;
+namespace logicdir\DataSynchronize\PanelSections;
 
-use Logicdir\Base\PanelSections\PanelSection;
+use logicdir\Base\PanelSections\PanelSection;
 
 class ExportPanelSection extends PanelSection
 {

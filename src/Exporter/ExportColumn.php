@@ -1,8 +1,8 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Exporter;
+namespace logicdir\DataSynchronize\Exporter;
 
-use Logicdir\DataSynchronize\Enums\ExportColumnType;
+use logicdir\DataSynchronize\Enums\ExportColumnType;
 
 class ExportColumn
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Exporter;
+namespace logicdir\DataSynchronize\Exporter;
 
 class ExportCounter
 {

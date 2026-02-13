@@ -1,8 +1,8 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Enums;
+namespace logicdir\DataSynchronize\Enums;
 
-use Logicdir\Base\Supports\Enum;
+use logicdir\Base\Supports\Enum;
 
 class ExportColumnType extends Enum
 {

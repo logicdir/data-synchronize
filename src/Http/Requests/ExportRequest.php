@@ -1,8 +1,8 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Http\Requests;
+namespace logicdir\DataSynchronize\Http\Requests;
 
-use Logicdir\Support\Http\Requests\Request;
+use logicdir\Support\Http\Requests\Request;
 
 class ExportRequest extends Request
 {

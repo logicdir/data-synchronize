@@ -1,6 +1,6 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Concerns\Exporter;
+namespace logicdir\DataSynchronize\Concerns\Exporter;
 
 use Illuminate\Contracts\View\View;
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Importer;
+namespace logicdir\DataSynchronize\Importer;
 
-use Logicdir\Base\Facades\Assets;
-use Logicdir\Base\Facades\BaseHelper;
-use Logicdir\DataSynchronize\Concerns\Importer\HasImportResults;
-use Logicdir\DataSynchronize\Contracts\Importer\WithMapping;
-use Logicdir\DataSynchronize\DataTransferObjects\ChunkImportResponse;
-use Logicdir\DataSynchronize\DataTransferObjects\ChunkValidateResponse;
-use Logicdir\DataSynchronize\Exporter\ExampleExporter;
-use Logicdir\Media\Facades\RvMedia;
+use logicdir\Base\Facades\Assets;
+use logicdir\Base\Facades\BaseHelper;
+use logicdir\DataSynchronize\Concerns\Importer\HasImportResults;
+use logicdir\DataSynchronize\Contracts\Importer\WithMapping;
+use logicdir\DataSynchronize\DataTransferObjects\ChunkImportResponse;
+use logicdir\DataSynchronize\DataTransferObjects\ChunkValidateResponse;
+use logicdir\DataSynchronize\Exporter\ExampleExporter;
+use logicdir\Media\Facades\RvMedia;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Contracts\Filesystem\Filesystem;
 use Illuminate\Contracts\View\View;

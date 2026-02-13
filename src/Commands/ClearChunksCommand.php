@@ -1,8 +1,8 @@
 <?php
 
-namespace Logicdir\DataSynchronize\Commands;
+namespace logicdir\DataSynchronize\Commands;
 
-use Logicdir\Base\Facades\BaseHelper;
+use logicdir\Base\Facades\BaseHelper;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
