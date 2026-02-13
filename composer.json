@@ -1,0 +1,23 @@
+﻿{
+    "name": "Logicdir/data-synchronize",
+    "description": "Make site ready in few steps",
+    "type": "Logicdir-package",
+    "autoload": {
+        "psr-4": {
+            "Logicdir\\DataSynchronize\\": "src/"
+        }
+    },
+    "require": {
+        "Logicdir/platform": "*@dev",
+        "maatwebsite/excel": "^3.1",
+        "spatie/simple-excel": "^3.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Logicdir\\DataSynchronize\\Providers\\DataSynchronizeServiceProvider"
+            ]
+        }
+    }
+}
+

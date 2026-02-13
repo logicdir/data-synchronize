@@ -1,0 +1,16 @@
+﻿<?php
+
+namespace {{ namespace }};
+
+use Logicdir\DataSynchronize\Http\Controllers\ImportController;
+use Logicdir\DataSynchronize\Importer\Importer;
+use {{ importerNamespace }};
+
+class {{ class }} extends ImportController
+{
+    protected function getImporter(): Importer
+    {
+        return {{ importer }}::make();
+    }
+}
+
