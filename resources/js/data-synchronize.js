@@ -1,4 +1,4 @@
-﻿$(() => {
+$(() => {
     const exportFile = ($form, data, button) => {
         const httpClient = $httpClient.make().withResponseType('blob')
 

@@ -1,4 +1,4 @@
-﻿# Data Synchronize
+# Data Synchronize
 
 ## Usage
 

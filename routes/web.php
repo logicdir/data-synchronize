@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 use Logicdir\Base\Facades\AdminHelper;
 use Logicdir\Base\Http\Middleware\DisableInDemoModeMiddleware;

@@ -1,4 +1,4 @@
-﻿@php
+@php
     /** @var \Logicdir\DataSynchronize\Importer\Importer $importer */
 
     $acceptedFiles = Arr::join(array_map(fn ($item) => $item, $importer->getAcceptedFiles()), ',');
